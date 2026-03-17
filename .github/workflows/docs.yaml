@@ -13,12 +13,16 @@
 # the scoring and report generation as part of a release flow.
 
 ---
-# .github/workflows/docs.yml
+# .github/workflows/docs.yaml
 name: Report publication workflow
 
 on:
     workflow_call:
     workflow_dispatch:
+
+concurrency:
+    group: "publish-${{ github.head_ref || github.ref }}"
+    cancel-in-progress: true
 
 permissions:
     contents: read
@@ -35,11 +39,17 @@ jobs:
                   python-version: "3.13"
             - run: pip install -e .
 
-            - name: Store published report for deployment
-              uses: actions/download-artifact@v6
+            - name: Retrieve HTML OFT report for publication
+              uses: actions/download-artifact@v8
+              with:
+                  name: oft-tracing-report-html
+                  path: mkdocs/oft
+
+            - name: Retrieve TSF report for publication
+              uses: actions/download-artifact@v8
               with:
                   name: trustable-report-files
-                  path: docs/trustable
+                  path: mkdocs/trustable
 
             - name: Build site
               env:
