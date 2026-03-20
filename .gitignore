@@ -1,0 +1,10 @@
+# act configs
+payload.json
+
+# mkdocs-generated files
+site/
+tsfserve.egg-info/
+
+docs/trustable/**
+!docs/trustable/
+!docs/trustable/.nav.yml
