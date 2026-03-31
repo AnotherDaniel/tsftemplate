@@ -113,7 +113,7 @@ jobs:
     needs:
       - quality_artifacts
     outputs:
-      tracing-report-name: ${{ steps.run-oft.outputs.tracing-report-name }}
+      tracing-report-name: ${{ steps.run-oft-aspec.outputs.tracing-report-name }}
     steps:
       - uses: actions/checkout@v6
       - name: "Determine OpenFastTrace file patterns from .env file"
