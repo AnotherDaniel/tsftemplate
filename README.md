@@ -13,7 +13,7 @@
 [![TSF Score](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fanotherdaniel.github.io%2Ftsftemplate%2Ftrustable%2Fscore.json&query=%24.scores%5B0%5D.score&label=TSF%20Score&color=blue)](https://anotherdaniel.github.io/tsftemplate/trustable/dashboard.html)
 [![TSF Report](https://img.shields.io/github/v/release/AnotherDaniel/tsftemplate?label=TSF%20Report&color=green)](https://anotherdaniel.github.io/tsftemplate/trustable/trustable_report_for_tsftemplate.html)
 
----
+</br>
 
 <!--
 `impl~project-readme~1`
