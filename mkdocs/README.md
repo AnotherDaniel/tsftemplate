@@ -1,6 +1,6 @@
-# `tsftemplate` project overview
+# Project overview
 
-This is the overview and documentation hub for the `tsftemplate` project.
+This is the documentation hub for the `tsftemplate` project.
 
 * For more information about `tsftemplate`, continue to the main project README included below
 * Documentation of the [Eclipse Trustable Software Framework (TSF)](https://pages.eclipse.dev/eclipse/tsf/tsf/)
