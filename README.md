@@ -72,8 +72,3 @@ Please have a look at the detailed [description of the 3 stages and their implem
 ## Hands-on - how one quality item flows through the `tsftemplate` process
 
 To make the practical application of the `tsftemplate` approach to TSF more tangible, we offer a step-by-step description of how a [quality item flows through the three stages](docs/one_item.md), with references to implementation in this project as well as supporting tool documentation.
-
-## Todos
-
-- further thoughts; about safety engineering and that being before-scope, and about separation of tsftemplate guts from actual applying project
-- README scope: what is this *NOT*?
