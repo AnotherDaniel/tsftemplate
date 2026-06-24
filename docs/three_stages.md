@@ -87,5 +87,6 @@ In Stage III, `tsftemplate` makes use of existing tools and GitHub capabilities 
 - `.github/workflows/release.yaml`: the `tsftemplate` release workflow, runs OpenFastTrace to get a complete requirements trace, uses `tsffer` to tidy up tsffer artifacts from across all possible pipeline jobs and steps, `tsflink` to invoke TSF graph scoring and report publication.
 - `.github/workflows/docs.yaml`: build mkdocs site including TSF report, and publish to GH pages.
 - `mkdocs/`: configuration and assets related to the mkdocs project/TSF website.
+- `pyproject.toml`: Python dependency declarations, required by Material-for-mkdocs
 - `.env.oft`: provide some configuration for the OpenFastTrace reporting tool.
 - `mkdocs.yaml`: mkdocs configuration.
